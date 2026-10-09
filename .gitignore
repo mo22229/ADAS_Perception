@@ -1,10 +1,47 @@
+# Build artifacts
 build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.o
+*.a
+*.so
+*.out
+
+# Executables generated locally
+
+
+# Datasets
 data/*
 !data/.gitkeep
+
+# Trained models and inference engines
 models/*
 !models/.gitkeep
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Training outputs
+runs/
+outputs/
+
+# Python temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments and secrets
+.venv/
+venv/
+.env
+.env.*
+
+# IDE and OS files
 .vscode/
 .idea/
 .DS_Store
-__pycache__/
-*.pyc
+Thumbs.db
